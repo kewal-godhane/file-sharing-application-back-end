@@ -50,7 +50,7 @@ router.post('/',(req,res)=>{
         const response = await file.save();
 
         // response ->link
-        return res.json({file : `${process.env.APP_BASE_URL}/files/${response.uuid}`});
+        return res.json({file : `https://file-sharing-application-by-kewal.onrender.com/files/${response.uuid}`});
         // http://localhost:3000/files/23464ljfoe-92837kjshfhs  ->this type of link is returned
     })
 
